@@ -1,8 +1,6 @@
 
 const fsP = require('fs/promises')
 
-const argv = process.argv;
-
 async function cat(path) {
     try {
         let contents = await fsP.readFile(path, "utf8");
